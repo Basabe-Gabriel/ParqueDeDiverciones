@@ -1,9 +1,14 @@
-let Altura Max: Number = 130;
+let aceptar = document.getElementById("boton");
+let altura = document.getElementById("altura");
 
-let Altura: Number = Number(Altura.value);
+let alturaMax: Number = 1.3;
+//let altura: number = 1.5;
+let alt: number = Number(altura.value);
 
-if (altura > max) {
-  console.log("No Sube");
-} else {
-  console.log("Pasa");
-}
+aceptar.addEventListener("click", () => {
+  if (alt <= alturaMax) {
+    console.log("No Sube");
+  } else {
+    console.log("Pasa");
+  }
+});
